@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Play m3u8 videos</title>
+    <script src="hls.js"></script>
+    <script src="hls.min.js.map"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/icon.png">
+</head>
+<body>
+	<main class="main">
+		<div class="title-h1">
+			<h1>PLAY ANY M3U8 VIDEO</h1>
+		</div>
+		<div class="video-div">
+			<form class="form-div">
+				<input class="input-url" placeholder="Paste your url..." type="text" value="" id="inputUrl" required>
+				<input class="button" type="button" value="Play" id="btn-play">
+			</form>
+			<video id="video" controls></video>
+		</div>
+
+		<footer class="footer">
+			<p>This website a created by <a href="https://github.com/ignacioriva">Ignacio Riva</p>
+		</footer>
+	</main>
+
+
+
+<script src="app.js"></script>
+
+
+</body>
+</html>
