@@ -105,5 +105,13 @@
 
 @media screen and (max-width: 430px) {
 	.main .video-div .form-div .input-url {
-    width: 83%;
+    width: 73%;
+}
+    .main .video-div .form-div .button {
+    	width: 25%;
+    }
+    .main .video-div video{
+	height: 256px;
+}
+
 }
