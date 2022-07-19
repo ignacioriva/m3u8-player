@@ -19,12 +19,21 @@ function play_stream(url,inputUrl) {
     }
 }
 
+function getURL (name) {
+   return twitch.getStream(name)
+	.then(data => data[2].url)
+}
+
+
 const valueInput = () => {
     let button = document.getElementById("btn-play");
     let urlInput = document.getElementById("inputUrl");
     button.addEventListener('click', function() {
         let urlForInput = document.getElementById("inputUrl").value;
-        play_stream(urlForInput);
+        (async () => {
+    const data = await getURL(urlForInput);
+    play_stream(data);
+})();
 
     }
         )
